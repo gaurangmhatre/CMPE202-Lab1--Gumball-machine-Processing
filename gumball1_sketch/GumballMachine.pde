@@ -89,10 +89,7 @@ public class GumballMachine {
       result.append("s");
     }
     result.append("\n");
-    result.append("Machine is " + state + "\n");
-    
-    
-    
+    result.append("Machine is " + state + "\n");   
     return result.toString();
   }
 

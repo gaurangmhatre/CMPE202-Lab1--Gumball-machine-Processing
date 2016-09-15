@@ -15,7 +15,7 @@ String ClickedOver = null;
 
 int blackColor =  color(0);
 int gray = color(204);
-int darkGray = color(51);
+int white = color(255);//color(51);
 GumballMachine gumballMachine;
 
 int currentCountOfGumballs;
@@ -36,13 +36,13 @@ void setup()
   textFont(font, 32);
 
   //insertQuarterButton
-  insertQuarterButtonColor =  darkGray; 
+  insertQuarterButtonColor =  white; 
   insertQuarterButtonHighlight = gray;
   insertQuarterButtonX = width/4-insertQuarterButtonSize-10;
   insertQuarterButtonY = height/4;
   
   //turnCrankButton
-  turnCrankButtonColor =  darkGray;
+  turnCrankButtonColor =  white;
   turnCrankButtonHighlight = gray;
   turnCrankButtonX = (width/4-turnCrankButtonSize-10)+(insertQuarterButtonSize+10);
   turnCrankButtonY = height/4;
@@ -104,11 +104,11 @@ void draw() {
   //-------------------------
   
   
-  //fill(darkGray);
+  //fill(white);
   
   if(!insertQuarterButtonOver &&!insertQuarterButtonOver)
   {
-    fill(darkGray);
+    fill(white);
     rect(insertQuarterButtonX,insertQuarterButtonY,insertQuarterButtonSize,insertQuarterButtonSize);
     rect(turnCrankButtonX,turnCrankButtonY,turnCrankButtonSize,turnCrankButtonSize);
   }
@@ -117,21 +117,15 @@ void draw() {
            
            fill(gray);
            rect(insertQuarterButtonX,insertQuarterButtonY,insertQuarterButtonSize,insertQuarterButtonSize);
-           fill(darkGray);
+           fill(white);
            rect(turnCrankButtonX,turnCrankButtonY,turnCrankButtonSize,turnCrankButtonSize);
-           
-           /*if(ClickedOver == "insertQuarterButton")
-           {
-                 fill(blackColor);
-                 rect(insertQuarterButtonX,insertQuarterButtonY,insertQuarterButtonSize,insertQuarterButtonSize);
-           }*/
            
          }
          
          if(turnCrankButtonOver)
          {
            
-           fill(darkGray);
+           fill(white);
            rect(insertQuarterButtonX,insertQuarterButtonY,insertQuarterButtonSize,insertQuarterButtonSize);
            fill(gray);
            rect(turnCrankButtonX,turnCrankButtonY,turnCrankButtonSize,turnCrankButtonSize);
